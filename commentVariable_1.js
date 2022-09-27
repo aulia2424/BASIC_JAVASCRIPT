@@ -31,6 +31,6 @@ console.log(division);
     fourth chapter is miltiplication
  */
 var c = 20;
-var d = 11;
+var d = 5;
 var miltiplication = a * b;
 console.log(miltiplication);

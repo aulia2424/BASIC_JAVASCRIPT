@@ -109,3 +109,5 @@ console.log(userDua);
 const halo = "halo aul";
 console.log(halo);
 //  saya ingin meminculkan id yang valienya satu dan dua dan nama aulia martha : 12 rpl
+
+// eval untuk mengubah tipe data menjadi matematika
