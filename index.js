@@ -93,8 +93,6 @@ console.log(haloo);
 
 /*
   Synchronous
-
-*/
 const getUserSync = (id) => {
   const nama = id === 1 ? "aulia martha" : "12 rpl";
   return { id, nama };
@@ -108,6 +106,25 @@ console.log(userDua);
 
 const halo = "halo aul";
 console.log(halo);
+*/
 //  saya ingin meminculkan id yang valienya satu dan dua dan nama aulia martha : 12 rpl
-
 // eval untuk mengubah tipe data menjadi matematika
+
+const getUser = (id, cb) => {
+  const time = id === 1 ? 3000 : 2000;
+  setTimeout(() => {
+    const nama = id === 1 ? "Aulia Matha" : "kelas 12";
+    cb({ id, nama });
+  }, time);
+};
+
+const userSatu = getUser(1, (hasil) => {
+  console.log(hasil);
+});
+
+const userDua = getUser(2, (hasil) => {
+  console.log(hasil);
+});
+
+const halo = "hello aulll";
+console.log(halo);
