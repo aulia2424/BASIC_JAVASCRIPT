@@ -7,16 +7,16 @@ http
   .listen(8080);
 
 /*
-     Apa itu node js?
+     =====Apa itu node js?=====
    node js adalah js runtime yang di bangun dalam js engine V8 punya google chrome (node js bukan bahasa pemrogramaan fungsinya untuk menjalankan sripct.js, jadi js tadinya sangat ketergantungan V8 atau engine yang ada di browser, dengan menggunakan node js kita tidak perlu membuka browser untuk menjalankan js)
 
-   Apa maksut dari runtime?
+   =====Apa maksut dari runtime?=====
    dimana kita menjalanka/mengeksekusi code kita
 
-   Pembuat node js
+   =====Pembuat node js=====
    Ryan Dahl tahun 2009 menggunakan event loop, tujuan dia membuat node js supaya V8 engine bisa di jalankan di luar sistem browser.
 
-   Karakteristik Node js
+   ======Karakteristik Node js=====
    1. Asynchronous & Event Driven
    2. Non-Blocking
    3. Single Threaded but Highly Scable
@@ -24,7 +24,7 @@ http
    5. MIT License
    6. NPM (node package manager)
 
-   Fitur Utama Node Js
+   =====Fitur Utama Node Js=====
    1. File System
    2. Buffer
    3. Http & Https
@@ -33,14 +33,14 @@ http
    6. Crypto
    7. Zlib
 
-   Node Js VS Php?
+   =====Node Js VS Php?=====
    tahun dibuat | php 1994 | Node JS 2009
    engine | Php Zend Engine | Node JS Google's V8 Engine
    eksekusi code | php Multi-Thread, Synchronous | Node JS Single-Thread, Asynchronous
    web server | php Apache/ISS | Node JS berjalan di runtime sendiri 
    package manager | php composer | Node JS NPM
 
-   NodeJS cocok untuk..
+   =====NodeJS cocok untuk..=====
    - Dynamic Single Page Application (SPA)
    - Realtime App (Chat, Multiplayer)
    - API
@@ -50,7 +50,7 @@ http
    - MERN (MONGO DB, EXPRESS, REACT, NODE), MEAN (MONGO DB, EXPRESS, ANGULAR, NOD), MEVN (MONGO DB, EXPRESS, VIEW, NOD)
 
 
-   ilmu apa yang harus kita pahami sebelum belajar Node JS?
+   =====ilmu apa yang harus kita pahami sebelum belajar Node JS?=====
    - Javascript Dasar
    - Javascript Lanjutan (Modern JS / ES6)
 */
@@ -75,7 +75,7 @@ console.log(halo);
 */
 
 /*
-  Asynchronous
+  =====Asynchronous======
 const getUser = require("./src/getUser");
 const user1 = getUser(1, (user1) => {
   console.log(user1);
@@ -92,7 +92,7 @@ console.log(haloo);
 */
 
 /*
-  Synchronous
+  =====Synchronous=====
 const getUserSync = (id) => {
   const nama = id === 1 ? "aulia martha" : "12 rpl";
   return { id, nama };
@@ -110,6 +110,8 @@ console.log(halo);
 //  saya ingin meminculkan id yang valienya satu dan dua dan nama aulia martha : 12 rpl
 // eval untuk mengubah tipe data menjadi matematika
 
+// =====Asynchronous=====
+/*
 const getUser = (id, cb) => {
   const time = id === 1 ? 3000 : 2000;
   setTimeout(() => {
@@ -128,3 +130,9 @@ const userDua = getUser(2, (hasil) => {
 
 const halo = "hello aulll";
 console.log(halo);
+*/
+// jadi yang di jalankan duluan adalah function yang mudah
+
+/*
+REPL = Read, Eval, Print, Loop
+*/
